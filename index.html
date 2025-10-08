@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SplitSync - Admin Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg p-4 rounded-4" style="width: 400px;">
+      <h2 class="text-center mb-4">Admin Login</h2>
+
+      <form id="adminLoginForm" novalidate>
+        <div class="mb-3">
+          <label for="adminUsername" class="form-label">Username / Email</label>
+          <input type="text" class="form-control" id="adminUsername" placeholder="Enter admin username" required>
+          <div class="invalid-feedback">Username or Email is required (min 3 chars).</div>
+        </div>
+        <div class="mb-3">
+          <label for="adminPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="adminPassword" placeholder="Enter password" minlength="6" required>
+          <div class="invalid-feedback">Password must be at least 6 characters.</div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./JS/index.js"></script>
+</body>
+
+</html>

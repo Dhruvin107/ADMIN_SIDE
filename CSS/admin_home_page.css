@@ -1,0 +1,65 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    padding-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hide sidebar on mobile by default */
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 220px;
+        height: 100%;
+        transform: translateX(-100%);
+        z-index: 1050;
+        padding: 15px;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sidebar a:hover {
+    background: #e9ecef;
+    border-radius: 6px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.card-metric {
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.card-metric h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.card-metric p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
